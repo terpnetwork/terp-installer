@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - BUILDPLATFORM
+        - TARGETPLATFORM=${TARGETPLATFORM:-linux/amd64}
+    image: terpnetwork/terp-installer:latest
+    platform: ${TARGETPLATFORM:-linux/amd64}
