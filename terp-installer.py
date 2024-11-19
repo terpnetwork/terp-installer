@@ -137,12 +137,12 @@ TESTNET = Network(
     genesis_url = "https://raw.githubusercontent.com/terpnetwork/networks/refs/heads/main/testnet/90u-4/genesis.json",
     binary_url = {
         "linux": {
-            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-{TESTNET_VERSION}-linux-amd64",
-            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-{TESTNET_VERSION}-linux-arm64"
+            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-linux-amd64",
+            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-linux-arm64"
         },
         "darwin": {
-          "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-{TESTNET_VERSION}-linux-amd64",
-          "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-{TESTNET_VERSION}-linux-arm64"
+          "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-linux-amd64",
+          "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{TESTNET_VERSION}/terpd-linux-arm64"
         },
     },
     peers = [
@@ -160,16 +160,16 @@ MAINNET = Network(
     genesis_url = "https://raw.githubusercontent.com/terpnetwork/networks/refs/heads/main/mainnet/morocco-1/genesis.json",
     binary_url = {
        "linux": {
-            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-{MAINNET_VERSION}-linux-amd64",
-            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-{MAINNET_VERSION}-linux-arm64"
+            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-linux-amd64",
+            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-linux-arm64"
         },
         "darwin": {
-            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-{MAINNET_VERSION}-linux-amd64",
-            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-{MAINNET_VERSION}-linux-arm64"
+            "amd64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-linux-amd64",
+            "arm64": f"https://github.com/terpnetwork/terp-core/releases/download/v{MAINNET_VERSION}/terpd-linux-arm64"
         },
     },
     peers = None,
-    rpc_node = "https://terp-mainnet-rpc.itrocket.net:443",
+    rpc_node = "https://rpc-terp.zenchainlabs.io:443",
     addrbook_url = "https://server-3.itrocket.net/mainnet/terp/addrbook.json",
     snapshot_url = "https://snapshots.nodejumper.io/terp/terp_latest.tar.lz4"
 )
